@@ -1,0 +1,75 @@
+.pricing-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 24px;
+}
+
+.pricing-badge-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-badge-container {
+  background-color: var(--color-bg-badge);
+  padding: 4px 10px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-badge {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-text-secondary);
+  letter-spacing: -0.084px;
+  font-feature-settings: "ss11", "calt" 0, "liga" 0;
+}
+
+.pricing-title {
+  font-family: var(--font-phudu);
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--color-text-primary);
+  letter-spacing: -0.6px;
+  max-width: 511px;
+  text-transform: none;
+  font-feature-settings: "calt" 0, "liga" 0;
+}
+
+.pricing-subtitle {
+  font-family: var(--font-inter);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-muted);
+  letter-spacing: -0.176px;
+  max-width: 359px;
+  font-feature-settings: "ss11", "calt" 0, "liga" 0;
+}
+
+.pricing-subtitle-highlight {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .pricing-header {
+    margin-top: 60px;
+    gap: 12px;
+  }
+  .pricing-title {
+    font-size: 38px;
+    line-height: 42px;
+    letter-spacing: -0.38px;
+  }
+}

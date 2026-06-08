@@ -1,0 +1,73 @@
+.pricing-page-container {
+  background-color: var(--color-bg-container);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 1153px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 
+    0px 10px 30px rgba(0, 0, 0, 0.04),
+    0px 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.pricing-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/pinstripe.png');
+  background-size: 45px 450px;
+  background-repeat: repeat;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pricing-content-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.pricing-cards-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  max-width: 1060px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+  .pricing-cards-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-content-inner {
+    padding: 0 8px;
+  }
+  .pricing-page-container {
+    min-height: auto;
+    border-radius: 20px;
+  }
+  .pricing-cards-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+}
